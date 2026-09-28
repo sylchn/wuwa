@@ -141,7 +141,6 @@
 
           this.currentVersionIdx = idx;
           this.cfg = this.versions[idx];
-          this.resetContent();
           this.showUploadForm();
         }, { passive: true });
       });
@@ -154,6 +153,7 @@
       this.$postProcessSection.hidden = true;
       this.$input.value = "";
       this.$fileLabel.textContent = "Belum ada file dipilih";
+      this.resetContent();
     }
 
     showPostProcess() {
