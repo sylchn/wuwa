@@ -391,7 +391,8 @@
         }
 
         const disclaimer = isRemote
-          ? ` File ini berasal dari sumber default — belum tentu sesuai dengan kondisi instalasi game kamu. Jika folder ${tier} tidak ada di direktori game kamu, kamu bisa melewati file ini — sisanya akan diunduh langsung oleh launcher, atau kamu bisa mengunggah file secara manual agar sesuai dengan kondisi game kamu saat ini.`
+          ? ` File ini berasal dari sumber default kami, sehingga belum tentu sesuai dengan kondisi instalasi game di berbagai pengguna.
+          Jika folder ${tier} tidak tersedia di direktori game, kamu bisa melewati file ini. Sehingga, file yang diperlukan akan diunduh oleh launcher secara langsung, atau kamu dapat mengunggah file gameResources.json secara manual. Dengan begitu, semua file akan sesuai dengan instalasi game saat ini.`
           : "";
 
         const desc = `${baseDesc}${disclaimer} Terdiri dari <strong>${tierPak.length} file</strong>, total <strong>${formatSizeBoth(bytes)}</strong>.`;
